@@ -39,32 +39,101 @@ CRUD Operation Handlers: Lambda Functions
 
 #### JSON data added after uploading an Image
 
-  - handlePeopleGet
+- handlePeopleGet
         
-        ```
-        {
-          "id": 1,
-          "name": Micheal,
-          "deck-type": "swordsoul"
-        }
+   ```  
+  {
+      "id": 1,
+      "name": Micheal,
+      "deck-type": "swordsoul"
+  }
+   ```
 
-        ```
+<hr>      
 
-  - handlePeopleGet
+- handlePeopleGet
         
-        ```
-        {
-          "id": 1,
-          "name": Micheal,
-          "deck-type": "swordsoul"
-        },
-        {
-          "id": 2,
-          "name": Horford,
-          "deck-type": "dark-magician"
-        }
+  ```
+    {
+      "id": 1,
+      "name": Micheal,
+      "deck-type": "swordsoul"
+  },
+    {
+      "id": 2,
+      "name": Horford,
+      "deck-type": "dark-magician"
+  }
+  ```
+       
+- handlePeoplePut
+    - get by ID
+      ``` 
+      {
+        "id": 2,
+        "name": Horford,
+        "deck-type": "dark-magician"
+      }
 
-        ```
+      ```
+
+    - put 
+      ```
+      {
+        "id": 2,
+        "name": Horford,
+        "deck-type": "Legendary-Fisherman"
+
+      }
+
+      ``` 
+    - get by ID(again)
+      ```
+      {
+        "id": 2,
+        "name": Horford,
+        "deck-type": "Legendary-Fisherman"
+      }
+      ``` 
+
+<hr>
+     
+- handlePeopleDelete
+
+    - all records before delete
+      ```
+       
+        {
+            "id": 1,
+            "name": Micheal,
+            "deck-type": "swordsoul"
+      },
+        {
+            "id": 2,
+            "name": Horford,
+            "deck-type": "dark-magician"
+      }
+        
+      ``` 
+    - get by ID delete
+      ```
+      {
+            "id": 2,
+            "name": Horford,
+            "deck-type": "dark-magician"
+      }
+      ``` 
+    - get all records after delete 
+      ```
+      {
+            "id": 1,
+            "name": Micheal,
+            "deck-type": "swordsoul"
+      }
+      ``` 
+        
+        
+  
 
 Sticking with the Yugioh theme in honor of the creator of the franchise Kazuki Takahashi. October 4,1961 - July 6,2022
 #### Tests
