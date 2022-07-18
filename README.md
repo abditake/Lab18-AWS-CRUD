@@ -39,7 +39,7 @@ CRUD Operation Handlers: Lambda Functions
 
 #### JSON data added after uploading an Image
 
-- handlePeopleGet
+- handlePeopleGetByID
         
    ```  
   {
